@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{ac612396-59b3-497f-9f8b-f95237857127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{bf3d8dca-ddbc-4af6-8277-cda7322a64d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Console">
+      <UniqueIdentifier>{45c304e8-e3d5-49c7-8d1a-eccac8b7bed5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\DirectX">
+      <UniqueIdentifier>{ca7b24c1-34b9-438c-88ce-a6727326ceca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{4e36057f-7485-4af5-b54c-62bbbf4219a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic">
+      <UniqueIdentifier>{185c22fc-7005-420a-a506-d932984c97ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{0c116e51-bb46-49a7-8441-9e0cf186f22e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\GameScene">
+      <UniqueIdentifier>{7a3d3eec-71d4-4ae3-b75b-85b254682d58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\Sound">
+      <UniqueIdentifier>{ed7d28b8-3f39-441f-86ea-d09d5a800b2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{9546a2f3-1500-480f-ac8b-698273c89bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\Vector">
+      <UniqueIdentifier>{5d5e4574-aa27-450e-9109-d1fa67dcee4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\DirectXAnimation">
+      <UniqueIdentifier>{50fcba85-119f-46c4-9549-2d45df25b470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Object">
+      <UniqueIdentifier>{193e8d3c-6db7-4db8-a3e9-dc4a1d1e869c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zombie">
+      <UniqueIdentifier>{e628440b-905c-482d-a210-ba9f5797338a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{94c8c6fb-ce1d-4d13-9a08-826f585292d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Design">
+      <UniqueIdentifier>{f2af4de2-be6f-4997-add3-0d5cdd443a3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Weapon">
+      <UniqueIdentifier>{9965ca7c-da21-46f9-8b73-9ae005ff0473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor">
+      <UniqueIdentifier>{d0a84018-6ab6-4dad-8347-f6beb3ca361a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Console\Console.cpp">
+      <Filter>Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\Application.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\TimeThread.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="winmain.cpp" />
+    <ClCompile Include="Lib\DirectX\DXDevice.cpp">
+      <Filter>Lib\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Xfile.cpp">
+      <Filter>Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Title.cpp">
+      <Filter>Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DirectX\DInput.cpp">
+      <Filter>Lib\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\Sound\DirectSound.cpp">
+      <Filter>Lib\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\Sound\WaveFile.cpp">
+      <Filter>Lib\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\Sound\SoundManager.cpp">
+      <Filter>Lib\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DirectX\DXFont.cpp">
+      <Filter>Lib\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\PointSprite.cpp">
+      <Filter>Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\Vector\Vector.cpp">
+      <Filter>Lib\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Field.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\DSystem.cpp">
+      <Filter>Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Main.cpp">
+      <Filter>Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Result.cpp">
+      <Filter>Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\ModelManager.cpp">
+      <Filter>Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\TextureManager.cpp">
+      <Filter>Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Operating.cpp">
+      <Filter>Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\GameOver.cpp">
+      <Filter>Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Credit.cpp">
+      <Filter>Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Score.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\Collider.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Object\Object.cpp">
+      <Filter>Graphic\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Zombie\Zombie.cpp">
+      <Filter>Zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\DirectXAnimation\AllocateHierarchy.cpp">
+      <Filter>Graphic\DirectXAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\YukiAnimation.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\WaterSlider.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\MyMathLib.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\Fade.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Design\Decorate.cpp">
+      <Filter>Design</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon\AbstractWeapon.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon\BB.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon\BG.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon\WG.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Ranking.cpp">
+      <Filter>Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\Actor.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\ActorFactory.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\StateMachine.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Console\Console.h">
+      <Filter>Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Global\Global.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Application.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\TimeThread.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DirectX\DXDevice.h">
+      <Filter>Lib\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Camera\Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Xfile.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Title.h">
+      <Filter>Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DirectX\DInput.h">
+      <Filter>Lib\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Sound\DirectSound.h">
+      <Filter>Lib\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Sound\WaveFile.h">
+      <Filter>Lib\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Sound\SoundManager.h">
+      <Filter>Lib\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DirectX\DXFont.h">
+      <Filter>Lib\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\PointSprite.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Vector\Vector.h">
+      <Filter>Lib\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Field.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\DSystem.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Main.h">
+      <Filter>Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Result.h">
+      <Filter>Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\ModelManager.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\TextureManager.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Operating.h">
+      <Filter>Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\GameOver.h">
+      <Filter>Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Credit.h">
+      <Filter>Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Score.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Collider.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Object\Object.h">
+      <Filter>Graphic\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Zombie\Zombie.h">
+      <Filter>Zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\DirectXAnimation\AllocateHierarchy.h">
+      <Filter>Graphic\DirectXAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\YukiAnimation.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\WaterSlider.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MyMathLib.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Fade.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Design\Decorate.h">
+      <Filter>Design</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon\AbstractWeapon.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon\BB.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon\BG.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon\WG.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Ranking.h">
+      <Filter>Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\Actor.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\ActorFactory.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\StateMachine.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="study.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="copy.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CG\ico\yuki-R1.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="CG\ico\igsv.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

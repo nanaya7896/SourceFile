@@ -1,0 +1,13 @@
+
+game	ゲーム画面BGM
+title	タイトル画面BGM
+count	カウントダウンSE
+
+agaru	プールから上がるとき
+baburu	しゃぼん玉を使ったとき
+bomb	しゃぼん玉が爆発したとき
+hairu	プールに入るとき
+nageru	ビーチボールを投げたとき
+slider	スライダーを滑っている間
+suberioti 	スライダーを滑り終わったとき
+z_si　	楽死んだとき

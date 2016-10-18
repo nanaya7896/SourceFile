@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0A4F8324-6356-4011-8D6F-18677AB128D6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>study</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\DX9\Include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\DX9\Lib\x86;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <FxCompile>
+      <EntryPointName>Tech</EntryPointName>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\DX9\Include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\DX9\Lib\x86;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\DX9\Include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\DX9\Lib\x86;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\DX9\Include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\DX9\Lib\x86;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Actor\Actor.cpp" />
+    <ClCompile Include="Actor\ActorFactory.cpp" />
+    <ClCompile Include="Camera\Camera.cpp" />
+    <ClCompile Include="Console\Console.cpp" />
+    <ClCompile Include="Design\Decorate.cpp" />
+    <ClCompile Include="Graphic\DirectXAnimation\AllocateHierarchy.cpp" />
+    <ClCompile Include="Graphic\DSystem.cpp" />
+    <ClCompile Include="Graphic\ModelManager.cpp" />
+    <ClCompile Include="Graphic\Object\Object.cpp" />
+    <ClCompile Include="Graphic\PointSprite.cpp" />
+    <ClCompile Include="Graphic\TextureManager.cpp" />
+    <ClCompile Include="Graphic\Xfile.cpp" />
+    <ClCompile Include="Lib\Application.cpp" />
+    <ClCompile Include="Lib\Collider.cpp" />
+    <ClCompile Include="Lib\DirectX\DInput.cpp" />
+    <ClCompile Include="Lib\DirectX\DXDevice.cpp" />
+    <ClCompile Include="Lib\DirectX\DXFont.cpp" />
+    <ClCompile Include="Lib\Fade.cpp" />
+    <ClCompile Include="Lib\Sound\DirectSound.cpp" />
+    <ClCompile Include="Lib\Sound\SoundManager.cpp" />
+    <ClCompile Include="Lib\Sound\WaveFile.cpp" />
+    <ClCompile Include="Lib\TimeThread.cpp" />
+    <ClCompile Include="Lib\Vector\Vector.cpp" />
+    <ClCompile Include="Math\MyMathLib.cpp" />
+    <ClCompile Include="Player\Player.cpp" />
+    <ClCompile Include="Player\StateMachine.cpp" />
+    <ClCompile Include="Player\WaterSlider.cpp" />
+    <ClCompile Include="Player\YukiAnimation.cpp" />
+    <ClCompile Include="Scene\Field.cpp" />
+    <ClCompile Include="Scene\GameScene\Credit.cpp" />
+    <ClCompile Include="Scene\GameScene\GameOver.cpp" />
+    <ClCompile Include="Scene\GameScene\Main.cpp" />
+    <ClCompile Include="Scene\GameScene\Operating.cpp" />
+    <ClCompile Include="Scene\GameScene\Ranking.cpp" />
+    <ClCompile Include="Scene\GameScene\Result.cpp" />
+    <ClCompile Include="Scene\GameScene\Title.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\Score.cpp" />
+    <ClCompile Include="Weapon\AbstractWeapon.cpp" />
+    <ClCompile Include="Weapon\BB.cpp" />
+    <ClCompile Include="Weapon\BG.cpp" />
+    <ClCompile Include="Weapon\WG.cpp" />
+    <ClCompile Include="winmain.cpp" />
+    <ClCompile Include="Zombie\Zombie.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actor\Actor.h" />
+    <ClInclude Include="Actor\ActorFactory.h" />
+    <ClInclude Include="Camera\Camera.h" />
+    <ClInclude Include="Console\Console.h" />
+    <ClInclude Include="Design\Decorate.h" />
+    <ClInclude Include="Global\Global.h" />
+    <ClInclude Include="Graphic\DirectXAnimation\AllocateHierarchy.h" />
+    <ClInclude Include="Graphic\DSystem.h" />
+    <ClInclude Include="Graphic\ModelManager.h" />
+    <ClInclude Include="Graphic\Object\Object.h" />
+    <ClInclude Include="Graphic\PointSprite.h" />
+    <ClInclude Include="Graphic\TextureManager.h" />
+    <ClInclude Include="Graphic\Xfile.h" />
+    <ClInclude Include="Lib\Application.h" />
+    <ClInclude Include="Lib\Collider.h" />
+    <ClInclude Include="Lib\DirectX\DInput.h" />
+    <ClInclude Include="Lib\DirectX\DXDevice.h" />
+    <ClInclude Include="Lib\DirectX\DXFont.h" />
+    <ClInclude Include="Lib\Fade.h" />
+    <ClInclude Include="Lib\Sound\DirectSound.h" />
+    <ClInclude Include="Lib\Sound\SoundManager.h" />
+    <ClInclude Include="Lib\Sound\WaveFile.h" />
+    <ClInclude Include="Lib\TimeThread.h" />
+    <ClInclude Include="Lib\Vector\Vector.h" />
+    <ClInclude Include="Math\MyMathLib.h" />
+    <ClInclude Include="Player\Player.h" />
+    <ClInclude Include="Player\StateMachine.h" />
+    <ClInclude Include="Player\WaterSlider.h" />
+    <ClInclude Include="Player\YukiAnimation.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene\Field.h" />
+    <ClInclude Include="Scene\GameScene\Credit.h" />
+    <ClInclude Include="Scene\GameScene\GameOver.h" />
+    <ClInclude Include="Scene\GameScene\Main.h" />
+    <ClInclude Include="Scene\GameScene\Operating.h" />
+    <ClInclude Include="Scene\GameScene\Ranking.h" />
+    <ClInclude Include="Scene\GameScene\Result.h" />
+    <ClInclude Include="Scene\GameScene\Title.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\Score.h" />
+    <ClInclude Include="Weapon\AbstractWeapon.h" />
+    <ClInclude Include="Weapon\BB.h" />
+    <ClInclude Include="Weapon\BG.h" />
+    <ClInclude Include="Weapon\WG.h" />
+    <ClInclude Include="Zombie\Zombie.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="study.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="copy.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CG\ico\igsv.ico" />
+    <Image Include="CG\ico\yuki-R1.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

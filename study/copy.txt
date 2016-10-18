@@ -1,0 +1,66 @@
+#pragma once
+//=====Include File=====//
+
+
+//=====ƒNƒ‰ƒXéŒ¾=====//
+class 
+{
+//privateƒƒ“ƒo•Ï”
+private:
+
+
+//publicƒƒ“ƒo•Ï”
+public:
+	
+
+//privateƒƒ“ƒoŠÖ”
+private:
+
+
+//publicƒƒ“ƒoŠÖ”
+public:
+
+};
+
+
+//====================================
+//ŠÖ”–¼	:
+//ˆø”		:
+//–ß‚è’l	:
+//“à—e		:
+//====================================
+
+
+E’Êí‡¬
+
+Œ‹‰ÊF‡¬F~‡¬F.alpha{Šî–{F~i‚P|‡¬F.alphaj
+
+lpDEV->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_SRCALPHA);
+lpDEV->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_INVSRCALPHA);
+
+E‰ÁŽZ‡¬
+
+Œ‹‰ÊF‡¬F~‡¬F.alpha{Šî–{F~‚P
+
+lpDEV->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_SRCALPHA);
+lpDEV->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_ONE);
+
+
+EæŽZ‡¬
+
+Œ‹‰ÊF‡¬F~Šî–{F
+‡¬F~‚O{Šî–{F~‡¬F
+
+lpDEV->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_ZERO);
+lpDEV->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_SRCCOLOR);
+‚à‚µ‚­‚Í
+lpDEV->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_DESTCOLOR);
+lpDEV->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_ZERO);
+
+EƒXƒNƒŠ[ƒ“‡¬
+
+Œ‹‰ÊF‡¬F{Šî–{F|‡¬F~Šî–{F
+‡¬F~i‚P|Šî–{Fj{Šî–{F~‚P
+
+lpDEV->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_INVDESTCOLOR);
+lpDEV->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_ONE);
