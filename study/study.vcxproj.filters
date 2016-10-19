@@ -191,6 +191,9 @@
     <ClCompile Include="Player\StateMachine.cpp">
       <Filter>Player</Filter>
     </ClCompile>
+    <ClCompile Include="ZombieAI.cpp">
+      <Filter>Zombie</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console\Console.h">
@@ -325,6 +328,9 @@
     </ClInclude>
     <ClInclude Include="Player\StateMachine.h">
       <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ZombieAI.h">
+      <Filter>Zombie</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -53,7 +53,7 @@ BOOL CStateMachine::PlayerMoveing()
 //====================================
 BOOL CStateMachine::PlayerWait()
 {
-	if ((m_pDInput->GetDInputJoyStick() !=NULL && !m_pDInput->AllControllCheck()) || m_pDInput->WASDKeyUpCheck())
+	if ((m_pDInput->GetDInputJoyStick() !=NULL && m_pDInput->AllControllCheck()) || (m_pDInput->WASDKeyUpCheck()))
 	{
 		stateNumber = 0;
 		return TRUE;
@@ -214,6 +214,13 @@ BOOL CStateMachine::CheckKeyPickUpButton()
 	}
 	return FALSE;
 }
+
+//====================================
+//関数名	:ChangeDistance
+//引数		:
+//戻り値	:
+//内容		:
+//====================================
 void CStateMachine::ChangeDistance()
 {
 	//水の中にいるときにカメラの距離を変更する

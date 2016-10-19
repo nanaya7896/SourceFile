@@ -282,61 +282,80 @@ void CPlayer::InputKeyUpdate(D3DXVECTOR3 viewAngle)
 //====================================
 void CPlayer::MoveDirection(char num)
 {
+	float moveSpeed = 1.0f;
+	if (num == UP_MOVE || num == DOWN_MOVE || num == RIGHT_MOVE || num == LEFT_MOVE)
+	{
+		//éŒÇﬂà⁄ìÆà»äO
+		moveSpeed = 1.0f;
+	}
+	//éŒÇﬂà⁄ìÆÇÃèÍçá
+	else
+	{
+		//à⁄ìÆåWêî0.71ÇÇ©ÇØÇÈ
+		moveSpeed = 0.71f;
+	}
+
+
 	switch (num)
 	{
 		/*élï˚å¸*/
 	case UP_MOVE:
-		m_vDirection = D3DXVECTOR3(0.0f, 0.0f, 1.0f);
+		m_vDirection = D3DXVECTOR3(0.0f, 0.0f, 1.0f)*moveSpeed;
 		break;
 	case DOWN_MOVE:
-		m_vDirection = D3DXVECTOR3(0.0f, 0.0f, -1.0f);
+		m_vDirection = D3DXVECTOR3(0.0f, 0.0f, -1.0f)*moveSpeed;
 		break;
 	case RIGHT_MOVE:
-		m_vDirection = D3DXVECTOR3(1.0f, 0.0f, 0.0f);
+		m_vDirection = D3DXVECTOR3(1.0f, 0.0f, 0.0f)*moveSpeed;
 		break;
 	case LEFT_MOVE:
-		m_vDirection = D3DXVECTOR3(-1.0f, 0.0f, 0.0f);
+		m_vDirection = D3DXVECTOR3(-1.0f, 0.0f, 0.0f)*moveSpeed;
 		break;
 		/*î™ï˚å¸*/
 	case UP_LEFT:
-		m_vDirection = D3DXVECTOR3(-0.5f, 0.0f, 0.5f);
+	//	m_vDirection = D3DXVECTOR3(-0.5f, 0.0f, 0.5f)*moveSpeed;
+		m_vDirection = D3DXVECTOR3(-1.0f, 0.0f, 1.0f)*moveSpeed;
 		break;
 	case UP_RIGHT:
-		m_vDirection = D3DXVECTOR3(0.5f, 0.0f, 0.5f);
+		//m_vDirection = D3DXVECTOR3(0.5f, 0.0f, 0.5f)*moveSpeed;
+		m_vDirection = D3DXVECTOR3(1.0f, 0.0f, 1.0f)*moveSpeed;
 		break;
 	case DOWN_LEFT:
-		m_vDirection = D3DXVECTOR3(-0.5f, 0.0f, -0.5f);
+		//m_vDirection = D3DXVECTOR3(-0.5f, 0.0f, -0.5f)*moveSpeed;
+		m_vDirection = D3DXVECTOR3(-1.0f, 0.0f, -1.0f)*moveSpeed;
 		break;
 	case DOWN_RIGHT:
-		m_vDirection = D3DXVECTOR3(0.5f, 0.0f, -0.5f);
+		//m_vDirection = D3DXVECTOR3(0.5f, 0.0f, -0.5f)*moveSpeed;
+		m_vDirection = D3DXVECTOR3(1.0, 0.0f, -1.0)*moveSpeed;
 		break;
 		/*è\òZï˚å¸*/
 	case LEFTRIGHT_UP:
-		m_vDirection = D3DXVECTOR3(-0.25f, 0.0f, 0.75f);
+		//m_vDirection = D3DXVECTOR3(-0.25f, 0.0f, 0.75f)*moveSpeed;
+		m_vDirection = D3DXVECTOR3(-0.25f, 0.0f, 0.75f)*moveSpeed;
 		break;
 	case LEFTRIGHT_DOWN:
-		m_vDirection = D3DXVECTOR3(-0.25f, 0.0f, -0.75f);
+		m_vDirection = D3DXVECTOR3(-0.25f, 0.0f, -0.75f)*moveSpeed;
 		break;
 
 	case LEFTLEFT_UP:
-		m_vDirection = D3DXVECTOR3(-0.75f, 0.0f, 0.25f);
+		m_vDirection = D3DXVECTOR3(-0.75f, 0.0f, 0.25f)*moveSpeed;
 		break;
 	case LEFTLEFT_DOWN:
-		m_vDirection = D3DXVECTOR3(-0.75f, 0.0f, -0.25f);
+		m_vDirection = D3DXVECTOR3(-0.75f, 0.0f, -0.25f)*moveSpeed;
 		break;
 	
 	case RIGHTLEFT_UP:
-		m_vDirection = D3DXVECTOR3(0.25f, 0.0f, 0.75f);
+		m_vDirection = D3DXVECTOR3(0.25f, 0.0f, 0.75f)*moveSpeed;
 		break;
 	case RIGHTLEFT_DOWN:
-		m_vDirection = D3DXVECTOR3(0.25f, 0.0f, -0.75f);
+		m_vDirection = D3DXVECTOR3(0.25f, 0.0f, -0.75f)*moveSpeed;
 		break;
 	
 	case RIGHTRIGHT_UP:
-		m_vDirection = D3DXVECTOR3(0.75f, 0.0f, 0.25f);
+		m_vDirection = D3DXVECTOR3(0.75f, 0.0f, 0.25f)*moveSpeed;
 		break;
 	case RIGHTRIGHT_DOWN:
-		m_vDirection = D3DXVECTOR3(0.75f, 0.0f, -0.25f);
+		m_vDirection = D3DXVECTOR3(0.75f, 0.0f, -0.25f)*moveSpeed;
 		break;
 
 	}

@@ -91,67 +91,67 @@ private:
 		{
 			"Model/zonbi_hokou.X",					// 0
 			"Model/zonbi_obore.X",					// 1
-													//€–S
-													"Model/zonbi_pool1.X",					// 2
-																							//ŠŠ‚Á‚Ä‚¢‚é“r’†
-																							"Model/zonbi_pool2.X",					// 3
-																																	//‚¤‚«‚íƒ]ƒ“ƒr
-																																	"Model/zonbipoolukiwa.X",				// 4
-																																	"Model/zonbidamezi01.X",				// 5
-																																	"Model/zonbidamezi02.X"					// 6
+			//€–S
+			"Model/zonbi_pool1.X",					// 2
+			//ŠŠ‚Á‚Ä‚¢‚é“r’†
+			"Model/zonbi_pool2.X",					// 3
+			//‚¤‚«‚íƒ]ƒ“ƒr
+			"Model/zonbipoolukiwa.X",				// 4
+			"Model/zonbidamezi01.X",				// 5
+			"Model/zonbidamezi02.X"					// 6
 		},
 
 		{
 			"Model/zonbi_hokou2.X",					// 0
 			"Model/zonbi_obore2.X",					// 1
-													//€–S
-													"Model/zonbi_pool12.X",					// 2
-																							//ŠŠ‚Á‚Ä‚¢‚é“r’†
-																							"Model/zonbi_pool22.X",					// 3
-																																	//‚¤‚«‚íƒ]ƒ“ƒr
-																																	"Model/zonbipoolukiwa.X",				// 4
-																																	"Model/zonbidamezi01.X",				// 5
-																																	"Model/zonbidamezi02.X"					// 6
+			//€–S
+			"Model/zonbi_pool12.X",					// 2
+			//ŠŠ‚Á‚Ä‚¢‚é“r’†
+			"Model/zonbi_pool22.X",					// 3
+			//‚¤‚«‚íƒ]ƒ“ƒr
+			"Model/zonbipoolukiwa.X",				// 4
+			"Model/zonbidamezi01.X",				// 5
+			"Model/zonbidamezi02.X"					// 6
 		},
 
 		{
 			"Model/zonbi_hokou3.X",					// 0
 			"Model/zonbi_obore3.X",					// 1
-													//€–S
-													"Model/zonbi_pool13.X",					// 2
-																							//ŠŠ‚Á‚Ä‚¢‚é“r’†
-																							"Model/zonbi_pool23.X",					// 3
-																																	//‚¤‚«‚íƒ]ƒ“ƒr
-																																	"Model/zonbipoolukiwa.X",				// 4
-																																	"Model/zonbidamezi01.X",				// 5
-																																	"Model/zonbidamezi02.X"					// 6
+			//€–S
+			"Model/zonbi_pool13.X",					// 2
+			//ŠŠ‚Á‚Ä‚¢‚é“r’†
+			"Model/zonbi_pool23.X",					// 3
+			//‚¤‚«‚íƒ]ƒ“ƒr
+			"Model/zonbipoolukiwa.X",				// 4
+			"Model/zonbidamezi01.X",				// 5
+			"Model/zonbidamezi02.X"					// 6
 		},
 
 		{
 			"Model/zonbi_hokou4.X",					// 0
 			"Model/zonbi_obore4.X",					// 1
-													//€–S
-													"Model/zonbi_pool14.X",					// 2
-																							//ŠŠ‚Á‚Ä‚¢‚é“r’†
-																							"Model/zonbi_pool24.X",					// 3
-																																	//‚¤‚«‚íƒ]ƒ“ƒr
-																																	"Model/zonbipoolukiwa.X",				// 4
-																																	"Model/zonbidamezi01.X",				// 5
-																																	"Model/zonbidamezi02.X"					// 6
+			//€–S
+			"Model/zonbi_pool14.X",					// 2
+			//ŠŠ‚Á‚Ä‚¢‚é“r’†
+			"Model/zonbi_pool24.X",					// 3
+			//‚¤‚«‚íƒ]ƒ“ƒr
+			"Model/zonbipoolukiwa.X",				// 4
+			"Model/zonbidamezi01.X",				// 5
+			"Model/zonbidamezi02.X"					// 6
 		},
 
 		{
 			//ƒ]ƒ“ƒr‚ÌƒAƒjƒ[ƒVƒ‡ƒ“
 			"Model/zonbi_hokou5.X",					// 0
 			"Model/zonbi_obore5.X",					// 1
-													//€–S
-													"Model/zonbi_pool15.X",					// 2
-																							//ŠŠ‚Á‚Ä‚¢‚é“r’†
-																							"Model/zonbi_pool25.X",					// 3
-																																	//‚¤‚«‚íƒ]ƒ“ƒr
-																																	"Model/zonbipoolukiwa.X",				// 4
-																																	"Model/zonbidamezi01.X",				// 5
-																																	"Model/zonbidamezi02.X"					// 6
+			//€–S
+			"Model/zonbi_pool15.X",					// 2
+			//ŠŠ‚Á‚Ä‚¢‚é“r’†
+			"Model/zonbi_pool25.X",					// 3
+			//‚¤‚«‚íƒ]ƒ“ƒr
+			"Model/zonbipoolukiwa.X",				// 4
+			"Model/zonbidamezi01.X",				// 5
+			"Model/zonbidamezi02.X"					// 6
 		}
 	};
 

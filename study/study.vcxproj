@@ -203,6 +203,7 @@
     <ClCompile Include="Weapon\BG.cpp" />
     <ClCompile Include="Weapon\WG.cpp" />
     <ClCompile Include="winmain.cpp" />
+    <ClCompile Include="ZombieAI.cpp" />
     <ClCompile Include="Zombie\Zombie.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -250,6 +251,7 @@
     <ClInclude Include="Weapon\BB.h" />
     <ClInclude Include="Weapon\BG.h" />
     <ClInclude Include="Weapon\WG.h" />
+    <ClInclude Include="ZombieAI.h" />
     <ClInclude Include="Zombie\Zombie.h" />
   </ItemGroup>
   <ItemGroup>
