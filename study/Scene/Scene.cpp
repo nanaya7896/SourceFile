@@ -152,7 +152,7 @@ BOOL CScene::CreateResource(LPDIRECT3DDEVICE9 pDevice9, HWND hWnd, BYTE* byKeySt
 	//モデルの一括読み込み
 	pModelManager->AllLoadXfile();
 	//フェードインアウトの処理
-	Fade::Create();
+	Fade::Create(m_pDevice9);
 
 	/*当たり判定*/
 	Collider::Create();

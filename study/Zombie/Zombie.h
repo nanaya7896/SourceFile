@@ -21,7 +21,8 @@ enum  ZOMBIESTATE
 	FLOW,
 	WALLOW,
 	STAIRS,
-	HITSTOP
+	HITSTOP,
+	STAIRS_Walk
 };
 
 
@@ -58,20 +59,19 @@ class CZombie : public CActor
 private:
 	//描画デバイス
 	LPDIRECT3DDEVICE9   m_pDevice;
-	ZOMBIEINFO*			m_ZombieInfo;
-	CAnimMesh*			m_pAnimation[SKIN_ZNUM][MOTION_ZNUM];
+	
+	
 	CScore				m_Score;
 	CMathLib*			m_pMathlib;
-	CWaterSlider*		m_pWaterSlider[NumZombies];
+	
 	LPD3DXEFFECT		m_pEffect;
-	CDecorate*			m_pDecorate;
+	
 	FLOAT				m_Speed;
 	D3DXVECTOR3         scale_;
 	D3DXVECTOR3         m_tmp;
 
 
-	//スコアの値を収める変数
-	int value;
+
 	D3DXVECTOR3 STAIRSPOSITION[5] =
 	{
 		D3DXVECTOR3(-174.5f,13.7258f,13.8f),
@@ -155,6 +155,13 @@ private:
 		}
 	};
 
+protected:
+		ZOMBIEINFO*			m_ZombieInfo;
+		CDecorate*			m_pDecorate;
+		CAnimMesh*			m_pAnimation[SKIN_ZNUM][MOTION_ZNUM];
+		CWaterSlider*		m_pWaterSlider[NumZombies];
+		//スコアの値を収める変数
+		int value;
 public:
 	CZombie();
 	CZombie(LPDIRECT3DDEVICE9);
@@ -170,16 +177,18 @@ public:
 	void Update(D3DXVECTOR3 playerPos, DWORD num);
 	BOOL AllZombiCheckCollider(D3DXVECTOR3 pos, int num);
 	BOOL IsDeadCheck();
-	void ZombieWalkUp(int num);
-	void Zombierevival(int num);
 	void ResetZombieInfo();
-	void HitStop(int num);
+	
 	void ExcuteState(int num, D3DXVECTOR3 playerPos);
 	/*ゾンビのステート関数*/
 	void ZombieDeathState(int num);
 	void ZombieFlowState(int num);
 	void ZombieWalowState(int num);
-
+	void ZombieWalkUp(int num);
+	void Zombierevival(int num);
+	void HitStop(int num);
+	void STAIRS_WalkState(int num);
+	/*ここまで*/
 
 	void SetAniamtionNum(int num, int anim)
 	{

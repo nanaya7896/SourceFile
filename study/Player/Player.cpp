@@ -119,6 +119,8 @@ BOOL CPlayer::CreateResource(LPDIRECT3DDEVICE9 pDevice9, CDInput* pInput,CSoundM
 //====================================
 void CPlayer::Update()
 {	
+	MyOutputDebugString("X:%f@Y:%f  Z:%f\n", m_pInfo.vPosition.x,m_pInfo.vPosition.y,m_pInfo.vPosition.z);
+
 	vViewAngle = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	InWater = FALSE;
 	//m_pInput->GetJoyStickState(&m_JoyState);

@@ -2,8 +2,9 @@
 
 Fade* Fade::m_pFadeInstance = NULL;
 
-Fade::Fade() {
-
+Fade::Fade(LPDIRECT3DDEVICE9 pDevice) 
+{
+	m_pDevice = pDevice;
 }
 
 Fade::~Fade() {
@@ -11,10 +12,10 @@ Fade::~Fade() {
 	//SAFE_DELETE(m_pFadeInstance);
 }
 
-void Fade::Create() {
+void Fade::Create(LPDIRECT3DDEVICE9 pDevice) {
 
 	if (!m_pFadeInstance) {
-		m_pFadeInstance = new Fade();
+		m_pFadeInstance = new Fade(pDevice);
 	}
 }
 
@@ -23,6 +24,22 @@ void Fade::Destory() {
 }
 
 BOOL Fade::Init() {
+
+	HRESULT hr;
+	LPD3DXBUFFER pErrorMsgs;
+	
+	// シェーダの読み込み
+	hr = D3DXCreateEffectFromFile(
+		m_pDevice,	// デバイス
+		"Effect/Zombie.fx",		// ファイル名
+		NULL,			// プリプロセッサ定義へのポインタ
+		NULL,			// オプションのインターフェイスポインタ 
+		0,				// コンパイルオプション
+		NULL,			// エフェクトプールオブジェクトへのポインタ
+		&m_pEffect,		// エフェクトオブジェクトへのポインタ
+		&pErrorMsgs);	// エラーおよび警告のリストを含むバッファ
+
+
 
 	return TRUE;
 }
@@ -42,7 +59,6 @@ BOOL Fade::Update(BOOL inOut, float fadeTime) {
 		initTime = timeGetTime();
 		nowInOut = inOut;
 	}
-
 
 	//経過したミリ秒を計算
 	float time = (double)(timeGetTime() - initTime) / 1000.0;
@@ -70,3 +86,4 @@ void Fade::Draw() {
 	pTextureManager->Draw(22, D3DXVECTOR3(0.0f, 0.0f, 0.0f), 1, alpha, D3DXVECTOR3(WINDOW_WIDTH, WINDOW_HEIGHT, 0.0f));
 	//pTextureManager->Draw(22, D3DXVECTOR3((WINDOW_WIDTH / 20.0f) * 3.0f, 0.0f, 0.0f), 1, 1.0f, D3DXVECTOR3(100.0f, 100.0f, 0.0f));
 }
+

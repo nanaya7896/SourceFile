@@ -1,5 +1,6 @@
 #include "Zombie.h"
 
+
 //====================================
 //関数名	:
 //引数		:
@@ -8,6 +9,8 @@
 //====================================
 CZombie::CZombie()
 {
+	
+	
 }
 
 // コンストラクタ
@@ -452,7 +455,7 @@ void CZombie::Update(D3DXVECTOR3 playerPos, DWORD num)
 //引数		:num:エネミーの番号
 //			 playerPos:プレイヤーの座標
 //戻り値	:
-//内容		:エネミーのステートを確かめてステートを実効する箇所
+//内容		:エネミーのステートを実効する箇所
 //====================================
 void CZombie::ExcuteState(int num,D3DXVECTOR3 playerPos)
 {
@@ -481,6 +484,9 @@ void CZombie::ExcuteState(int num,D3DXVECTOR3 playerPos)
 		//遊具でぶつかったときの処理
 	case HITSTOP:
 		HitStop(num);
+		break;
+	case STAIRS_Walk:
+		
 		break;
 	default:
 	#ifdef _DEBUG
@@ -743,6 +749,11 @@ void CZombie::HitStop(int num)
 		m_ZombieInfo[num].animNum = 0;
 		m_ZombieInfo[num].state = CHASER;
 	}
+}
+
+void CZombie::STAIRS_WalkState(int num)
+{
+
 }
 
 

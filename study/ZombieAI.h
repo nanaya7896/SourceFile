@@ -11,8 +11,26 @@
 
 class CZombie;
 
-class ZombieAI : public CZombie 
+typedef enum ZombieAIName
+{
+	CHASER_Mode,
+	DEATH_Mode,
+	FLOW_Mode,
+	WALLOW_Mode,
+	STAIRS_Mode,
+	HITSTOP_Mode
+};
+
+class CZombieAI : public CZombie
 {
 
+	CZombieAI();
+	~CZombieAI();
 
+	void Update();
+
+	void ZombieAISelect(ZombieAIName name);
+	void test(int num);
 };
+
+
