@@ -31,14 +31,20 @@ BOOL Fade::Init() {
 	// シェーダの読み込み
 	hr = D3DXCreateEffectFromFile(
 		m_pDevice,	// デバイス
-		"Effect/Zombie.fx",		// ファイル名
+		"Effect/ColorEdit.fx",		// ファイル名
 		NULL,			// プリプロセッサ定義へのポインタ
 		NULL,			// オプションのインターフェイスポインタ 
 		0,				// コンパイルオプション
 		NULL,			// エフェクトプールオブジェクトへのポインタ
 		&m_pEffect,		// エフェクトオブジェクトへのポインタ
 		&pErrorMsgs);	// エラーおよび警告のリストを含むバッファ
-
+	if (hr != S_OK)
+	{
+		MessageBox(NULL, (LPCSTR)pErrorMsgs->
+			GetBufferPointer(), "ERROR", MB_OK);
+		SAFE_RELEASE(pErrorMsgs);
+		return FALSE;
+	}
 
 
 	return TRUE;
@@ -81,9 +87,26 @@ BOOL Fade::Update(BOOL inOut, float fadeTime) {
 	return FALSE;
 }
 
-void Fade::Draw() {
-	CTextureManager* pTextureManager = CTextureManager::GetInstance();
-	pTextureManager->Draw(22, D3DXVECTOR3(0.0f, 0.0f, 0.0f), 1, alpha, D3DXVECTOR3(WINDOW_WIDTH, WINDOW_HEIGHT, 0.0f));
+void Fade::Draw()
+{
+	if (m_pEffect)
+	{
+		// テクニックの選択
+		m_pEffect->SetTechnique("textured");
+		// パスを指定
+		m_pEffect->Begin(0, 0);
+		
+
+
+		// シェーダ設定をグラボに更新
+		m_pEffect->CommitChanges();
+		CTextureManager* pTextureManager = CTextureManager::GetInstance();
+		pTextureManager->Draw(22, D3DXVECTOR3(0.0f, 0.0f, 0.0f), 1, alpha, D3DXVECTOR3(WINDOW_WIDTH, WINDOW_HEIGHT, 0.0f));
+		//
+		m_pEffect->EndPass();
+	}
+	//CTextureManager* pTextureManager = CTextureManager::GetInstance();
+	//pTextureManager->Draw(22, D3DXVECTOR3(0.0f, 0.0f, 0.0f), 1, alpha, D3DXVECTOR3(WINDOW_WIDTH, WINDOW_HEIGHT, 0.0f));
 	//pTextureManager->Draw(22, D3DXVECTOR3((WINDOW_WIDTH / 20.0f) * 3.0f, 0.0f, 0.0f), 1, 1.0f, D3DXVECTOR3(100.0f, 100.0f, 0.0f));
 }
 

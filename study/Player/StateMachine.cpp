@@ -145,6 +145,18 @@ BOOL CStateMachine::CreateResource(CDInput* pDInput,CPlayer* pPlayer,CSoundManag
 	}
 	//
 	stateNumber = 0;
+
+
+
+	if (m_pDInput->GetDInputJoyStick() == NULL)
+	{
+		isController = false;
+	}
+	else
+	{
+		isController = true;
+	}
+
 	return TRUE;
 }
 

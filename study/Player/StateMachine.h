@@ -77,6 +77,10 @@ private:
 	int stateNumber;
 	int weaponNumber;
 
+
+	/*’rŒ´’Ç‰Á*/
+	bool isController;
+	/*‚±‚±‚Ü‚Å*/
 	static void (CStateMachine::*const handler_[COLUMN][ROW])();
 	//publicƒƒ“ƒo•Ï”
 public:
@@ -89,7 +93,7 @@ private:
 	//publicƒƒ“ƒoŠÖ”
 public:
 
-	CStateMachine() : m_State_(STATE_Ground) {}
+	CStateMachine() : m_State_(STATE_Ground) { isController = false; }
 	void ResetState();
 	BOOL CreateResource(CDInput* pDInput, CPlayer*,CSoundManager* pSManager);
 	void Update();

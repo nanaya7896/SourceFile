@@ -1,31 +1,29 @@
-//頂点シェーダー出力
-struct VS_OUTPUT
+
+float4x4 matWVP : WorldViewProjection;
+
+struct vertexInput
 {
-	float4 Pos : POSITION;
-	float4 Col : COLOR0;
+    float3 Position : POSITION;
 };
 
-// 頂点シェーダー
-VS_OUTPUT VS_MainOut()
+struct vertexOutput
 {
+    float4 HPosition : POSITION;
+    float4 Diffuse : COLOR0;
+};
 
-	return;
+vertexOutput VS_TransformDiffuse(vertexInput IN)
+{
+    vertexOutput OUT;
+    OUT.HPosition = mul(float4(IN.Position.xyz, 1.0), matWVP);
+    OUT.Diffuse = float4(1.0f, 0.0f, 0.0f, 1.0f);
+    return OUT;
 }
 
-// ピクセルシェーダー
-float4 PS_main(float4 Col : COLOR0) : COLOR0
+technique textured
 {
-
-	// 常に白(1, 0, 0, 1)を返す
-	return Col;
-}
-
-technique _ColorEdit
-{
-	pass P0
-	{
-		VertexShader = compile vs_2_0 VS_MainOut();
-		PixelShader = compile vs_2_0 PS_main();
-
-	}
+    pass p0
+    {
+        VertexShader = compile vs_1_1 VS_TransformDiffuse();
+    }
 }
