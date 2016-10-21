@@ -125,6 +125,8 @@ void CStateMachine::ResetState()
 	stateNumber = 0;
 	weaponNumber = 0;
 	m_State_ = STATE_Ground;
+	int a = 0;
+	int b = 0;
 }
 
 //====================================
